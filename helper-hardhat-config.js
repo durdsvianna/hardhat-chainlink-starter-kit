@@ -36,6 +36,20 @@ const networkConfig = {
         fundAmount: "100000000000000000", // 0.1
         automationUpdateInterval: "30",
     },
+    5: {
+        name: "goerli",
+        linkToken: "0x326C977E6efc84E512bB9C30f76E30c160eD06FB",
+        ethUsdPriceFeed: "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+        keyHash: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
+        vrfCoordinator: "0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D",
+        vrfWrapper: "0xab18414CD93297B0d12ac29E63Ca20f515b3DB46",
+        oracle: "0x6090149792dAAeE9D1D568c9f9a6F6B46AA29eFD",
+        jobId: "ca98366cc7314957b8c012c72f05aeeb",
+        subscriptionId: "10546",
+        fee: "100000000000000000",
+        fundAmount: "100000000000000000", // 0.1
+        automationUpdateInterval: "60",
+    },
     137: {
         name: "polygon",
         linkToken: "0xb0897686c545045afc77cf20ec7a532e3120e0f1",
