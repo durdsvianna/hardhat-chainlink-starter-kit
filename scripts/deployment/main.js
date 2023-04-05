@@ -6,6 +6,7 @@
 // global scope, and execute the script.
 const { network, run } = require("hardhat")
 
+const { deployTokenShop } = require("./deployTokenShop")
 const { deployApiConsumer } = require("./deployApiConsumer")
 const { deployAutomationCounter } = require("./deployAutomationCounter")
 const { deployPriceConsumerV3 } = require("./deployPriceConsumerV3")
@@ -13,15 +14,18 @@ const { deployRandomNumberConsumer } = require("./deployRandomNumberConsumer")
 const {
     deployRandomNumberDirectFundingConsumer,
 } = require("./deployRandomNumberDirectFundingConsumer")
+const { deployFlower } = require("./deployFlower")
 
 async function main() {
     await run("compile")
     const chainId = network.config.chainId
-    await deployApiConsumer(chainId)
-    await deployAutomationCounter(chainId)
-    await deployPriceConsumerV3(chainId)
-    await deployRandomNumberConsumer(chainId)
-    await deployRandomNumberDirectFundingConsumer(chainId)
+    await deployTokenShop(chainId)
+    await deployFlower(chainId)
+    // await deployApiConsumer(chainId)
+    // await deployAutomationCounter(chainId)
+    // await deployPriceConsumerV3(chainId)
+    // await deployRandomNumberConsumer(chainId)
+    // await deployRandomNumberDirectFundingConsumer(chainId)
 }
 
 // We recommend this pattern to be able to use async/await everywhere

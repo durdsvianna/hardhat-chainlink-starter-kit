@@ -10,7 +10,7 @@
 
 [![GitPOAP Badge](https://public-api.gitpoap.io/v1/repo/smartcontractkit/hardhat-starter-kit/badge)](https://www.gitpoap.io/gp/649)
 
-- [Chainlink Hardhat Starter Kit](#chainlink-hardhat-starter-kit)
+- [DUH Hardhat Starter Kit](#duh-hardhat-starter-kit)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
@@ -39,12 +39,21 @@
 - [Thank You!](#thank-you)
   - [Resources](#resources)
 
-# Chainlink Hardhat Starter Kit
- Implementation of the following 4 Chainlink features using the [Hardhat](https://hardhat.org/) development environment:
+# DUH Hardhat Starter Kit based on Chainlink Starter Kit & Hardhat Boiler Template + tailwindcss
+ Implementation of the following 8 smart contracts using [Hardhat](https://hardhat.org/) development environment:
  - [Chainlink Price Feeds](https://docs.chain.link/docs/using-chainlink-reference-contracts)
  - [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf)
  - [Chainlink Keepers](https://docs.chain.link/docs/chainlink-keepers/introduction/)
  - [Request & Receive data](https://docs.chain.link/docs/request-and-receive-data)
+ - Token (ERC20)
+ - TokenShop (ERC20)
+ - Flower NFT (ERC721) + Chainlink Automation
+
+ Implementation of a frontend with 2 feature using the [Hardhat Boiler Template](https://hardhat.org/) development environment + [tailwindcss](https://tailwindcss.com/):
+ 
+ - Connect to Metamask
+ - Balance of Token (ERC20)
+ - Tranfer Token (ERC20)
 
 # Getting Started 
 
@@ -71,8 +80,8 @@ It's recommended that you've gone through the [hardhat getting started documenta
 After installing all the requirements, run the following:
 
 ```bash
-git clone https://github.com/smartcontractkit/hardhat-starter-kit/
-cd hardhat-starter-kit
+git clone https://github.com/durdsvianna/hardhat-development-base/
+cd hardhat-development-base
 ```
 Then:
 ```
@@ -107,14 +116,6 @@ or
 yarn test
 ```
 
-### Typescript
-
-To use typescript, run:
-
-```
-git checkout typescript
-npm install
-```
 
 # Usage
 
